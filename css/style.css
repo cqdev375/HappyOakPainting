@@ -1,0 +1,308 @@
+:root {
+    --brown: #281a0c;
+    --white: #fff;
+    --black: #000;
+}
+
+
+body {
+    font-family: Roboto, "Open Sans", sans-serif ;
+    font-size: 16px;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/******************  Header  ******************/
+ header {
+     width: 100%;
+     background: url(../img/headerbg1.png) var(--brown);
+     background-size: cover;
+     background-attachment: fixed;
+ }
+header .container {
+    position: relative;
+    height: 700px;
+}
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+header .menu a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+header .menu a:hover {
+    text-decoration: underline;
+}
+header .texts {
+    width: 100%;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+header .texts .name {
+    font-size: 50px;
+    font-weight: 700;
+}
+header .texts h3 {
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+
+/******************  Main  ******************/
+.main {
+    background: url(../img/HOPLogoBG.png);
+    background-repeat: repeat;
+}
+/******************  About  ******************/
+.main .about .container {
+    overflow: visible;
+    position: relative;
+}
+.main .about .picture {
+    background-color: var(--black);
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .50);
+}
+.main .about .picture img{
+    vertical-align: top;
+    width: 100%;
+}
+.main .about article {
+    background: var(--white);
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 150px;
+    float: right;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+.main .about article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .about article p{
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+/******************  Services  ******************/
+.main .services {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.main .services .title {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .services .container {
+    border: 1px double var(--brown);
+    background: var(--white);
+    color: var(--black);
+    padding: 10px;
+    overflow: hidden;
+}
+.main .services .service {
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main .services .service {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted var(--black);
+    overflow: hidden;
+    display: flex;
+}
+.main .services .service-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.main .service .description-text {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px;
+}
+.main .service .desription {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
+}
+.main .services .picture {
+    margin-bottom: 15px;
+    width: 100%;
+}
+/******************  Gallery  ******************/
+.main .gallery {
+    overflow: hidden;
+}
+.main .gallery .title {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+.main .gallery .picture {
+    width: 50%;
+    float: left;
+}
+.main .gallery .picture img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+.main .gallery .picture:hover img {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/******************  Contact  ******************/
+.main .contact {
+    background: var(--white);
+    padding: 60px;
+}
+.main .contact .title {
+    text-align: Center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.main .contact .address {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 22px;
+}
+.main .contact .phones {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 22px;
+}
+.reviews .container {
+    background-color: beige;
+    padding: 30px;
+    text-align: center;
+}
+.main .reviews .title {
+    text-align: Center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.main .reviews .text {
+    text-align: Center;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+/******************  Footer  ******************/
+footer {
+    background: var(--brown);
+}
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: var(--white);
+}
+/******************  Media Querries  ******************/
+@media screen and (max-width: 800px) {
+    header .container{
+        position: static;
+        height: auto;
+    }
+    header .texts {
+        position: static;
+        margin: 100px 0;
+    }
+    header .menu {
+        text-align: center;
+    }
+    header .menu a {
+        margin: 10px 20px;
+    }
+    header .texts .name {
+        font-size: 30px;
+    }
+    header .texts h3 {
+        font-size: 18px;
+    }
+    .main .about .picture {
+        width: 100%;
+        position: relative;
+    }
+    .main .about article {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        top: -50px;
+        transform: translate(0px, 0);
+    }
+    .main .services {
+        padding-top: 300px;
+    }
+    .main .services .service {
+        width: 100%;
+    }
+    .main .service .desription {
+        width: 50%;
+    }
+    .main .service .picture {
+        width: 50%;
+    }
+    .main .contact .title {
+        font-size: 30px;
+    }
+    .main .contact .address {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+    .main .contact .phones {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main .about article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .main .contact .title {
+        font-size: 22px;
+    }
+    .main .contact .address {
+        font-size: 16px;
+    }
+    .main .contact .phones {
+        font-size: 16px;
+    }
+}
+
